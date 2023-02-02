@@ -1,0 +1,92 @@
+.NavBar {
+  display: flex;
+  position: sticky;
+  top: 0;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  color: #ffffff;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--baseBlue);
+  z-index: 999;
+}
+
+.NavBar button {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-left: 3rem;
+  background-color: #ffffff;
+  font-weight: 700;
+  border-radius: 9999px;
+  color: rgba(0, 70, 156, 1);
+}
+
+.starlight_logo {
+  width: auto;
+  height: 2rem;
+}
+.hover_dropdown_container {
+  display: none;
+  align-items: center;
+}
+
+.hover_drop_down-item {
+  position: relative;
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+}
+
+.hover_drop_down-item p {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 0.25rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.hover_drop_down-child {
+  display: none;
+  padding-top: 0.5rem;
+  background-color: transparent;
+  flex-direction: column;
+  width: max-content;
+}
+
+.drop_child {
+  display: none;
+  padding-top: 0.5rem;
+  background-color: transparent;
+  flex-direction: column;
+  width: max-content;
+}
+
+/* Utils Classes */
+.expanded {
+  flex: 1 1 0%;
+}
+
+/* sm */
+@media (min-width: 640px) {
+}
+
+/* md */
+@media (min-width: 768px) {
+}
+
+/* lg */
+@media (min-width: 1024px) {
+}
+
+/* xl */
+@media (min-width: 1280px) {
+}
+
+/* 2xl */
+@media (min-width: 1536px) {
+}

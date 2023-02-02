@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --baseBlue: rgba(0, 70, 156, 1);
+}
+
+body {
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.pill {
+  @apply rounded-full;
+}
+
+.hover-lightGray {
+  background-color: rgba(255, 255, 255, 0.181);
+}
+
+.absolute-x-center {
+  @apply absolute left-1/2 -translate-x-1/2  transform;
+}
+
+.shadow-custom {
+  box-shadow: -2px 9px 11px -3px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -2px 9px 11px -3px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -2px 9px 11px -3px rgba(0, 0, 0, 0.75);
+}
