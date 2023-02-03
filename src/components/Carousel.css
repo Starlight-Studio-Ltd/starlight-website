@@ -57,12 +57,12 @@
   right: 24px;
 }
 
-@media (hover: none) and (pointer: coarse) {
+/* @media (hover: none) and (pointer: coarse) {
   .left-arrow,
   .right-arrow {
     display: none;
   }
-}
+} */
 
 .carousel-content.show-2 > * {
   width: 50%;

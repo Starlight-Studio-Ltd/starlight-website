@@ -3,13 +3,13 @@ import "./pages.css";
 
 export const OurClients = () => {
   return (
-    <section className="OurClients container_c">
-      <div className="my-10 bg-white">
-        <h2 className="text-center text-4xl font-bold opacity-80">
+    <section className="OurClients container_c py-10">
+      <div className="bg-white">
+        <h2 className="mb-10 text-center text-4xl font-bold opacity-80">
           Our Clients
         </h2>
 
-        <div className="flex flex-col items-center justify-center lg:flex-row">
+        <div className="flex flex-col items-center justify-center space-x-10 lg:flex-row">
           <HoverImage
             imageUrl="../../src/assets/clients/tawwin.jpg"
             text="Taw Win Htar Htar"

@@ -21,6 +21,7 @@
   display: block;
   width: 100%;
   height: auto;
+  overflow: hidden;
 }
 
 .overlay {
@@ -65,7 +66,17 @@
 
 /* Footer */
 
+.Footer textarea {
+  padding: 12px 20px;
+}
+.Footer label::after {
+  content: "*";
+  padding: 20px;
+  color: red;
+}
+
 input[type="text"],
+textarea,
 select {
   width: 100%;
   padding: 12px 20px;
@@ -79,7 +90,7 @@ select {
 input[type="submit"] {
   width: 100%;
   background-color: #4caf50;
-  color: white;
+  color: black;
   padding: 14px 20px;
   margin: 8px 0;
   border: none;
@@ -92,7 +103,7 @@ input[type="submit"]:hover {
 }
 
 .Footer {
-  background: #3a7bd5;
-  background: -webkit-linear-gradient(to right, #3a6073, #3a7bd5);
-  background: linear-gradient(to right, #3a6073, #3a7bd5);
+  background: #44a08d;
+  background: -webkit-linear-gradient(to right, #093637, #44a08d);
+  background: linear-gradient(to right, #093637, #44a08d);
 }
