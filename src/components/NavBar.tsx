@@ -1,18 +1,19 @@
 import React, { useRef, useState } from "react";
 import { Search } from "react-feather";
+import "./NavBar.css";
 
 export const NavBar = () => {
   return (
-    <div className="navbar sticky top-0 flex items-center justify-between bg-baseBlue px-12 py-6 text-white">
-      <div className="flex-1">
+    <div className="NavBar">
+      <div className="expanded">
         <img
           src="../src/assets/starlight_color_logo.png"
           alt=""
-          className="h-8 w-auto"
+          className="starlight_logo"
         />
       </div>
 
-      <div className="hidden items-center md:flex">
+      <div className="hover_dropdown_container">
         <HoverDropDown
           dropDownLabel="Learn"
           items={["Mobile", "Web", "Desktop", "Embedded"]}
@@ -32,14 +33,12 @@ export const NavBar = () => {
           items={["Community", "Event", "Culture"]}
         ></HoverDropDown>
 
-        <div className="pill cursor-pointer px-6 py-2 hover:bg-lightGray">
+        <div className="search-icon ">
           <Search></Search>
         </div>
       </div>
 
-      <button className="GetStarted ml-12 rounded-full bg-white px-8 py-2 font-bold text-baseBlue">
-        Get Start
-      </button>
+      <button className="GetStarted">Get Start</button>
     </div>
   );
 };
@@ -58,19 +57,24 @@ export const HoverDropDown = ({
   onClickItem,
 }: IHoverDropDown) => {
   return (
-    <div className="relative mx-1">
-      <p className="pill peer cursor-pointer px-6 py-2 pt-1 font-bold hover:bg-lightGray">
-        {dropDownLabel}
-      </p>
+    <div className="hover_drop_down-item">
+      <p className="drop_down-label">{dropDownLabel}</p>
 
       {items.length > 0 && (
-        <div className="absolute-x-center hidden w-max flex-col bg-transparent pt-2 hover:flex peer-hover:flex">
-          <div className="flex min-w-[200px] flex-col rounded-xl bg-white py-6 text-black">
+        <div className="absolute-x-center hover_drop_down-child ">
+          <div className="hover_child-container">
             {items.map((e, index) => {
               return (
                 <div
                   key={index}
-                  className={`${itemStyles} py-2 px-6 hover:bg-gray-200`}
+                  className={`${itemStyles} hover:bg-gray-200`}
+                  style={{
+                    paddingTop: "0.5rem",
+                    paddingBottom: "0.5rem",
+                    paddingLeft: "1.5rem",
+                    paddingRight: "1.5rem",
+                    cursor: "pointer",
+                  }}
                 >
                   {e}
                 </div>

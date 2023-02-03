@@ -3,18 +3,6 @@ import { NavBar } from "./components/NavBar";
 import { HomePage } from "./pages/HomePage";
 
 function App() {
-  useEffect(() => {
-    const input: number[] = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-
-    for (const num of input) {
-      console.log(linear(num));
-    }
-
-    function linear(n: number): number {
-      return (n - 1) * 1.5;
-    }
-  }, []);
-
   return (
     <div className="">
       <NavBar></NavBar>
@@ -24,3 +12,15 @@ function App() {
 }
 
 export default App;
+
+// If the cube is directly inside the container:
+// #container:hover > #cube { background-color: yellow; }
+
+// If cube is next to (after containers closing tag) the container:
+// #container:hover + #cube { background-color: yellow; }
+
+// If the cube is somewhere inside the container:
+// #container:hover #cube { background-color: yellow; }
+
+// If the cube is a sibling of the container:
+// #container:hover ~ #cube { background-color: yellow; }
