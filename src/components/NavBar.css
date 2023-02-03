@@ -108,15 +108,22 @@
   background-color: #ffffff;
   color: #000000;
   flex-direction: column;
-  border-radius: 0.75rem;
+  border-radius: 12px;
   min-width: 200px;
 }
 .hover_child-container > div:hover {
   background-color: rgba(229, 231, 235, 1);
 }
 
+.hover_drop_down-child {
+  border-radius: 12px;
+  box-shadow: 2px 9px 17px -8px rgba(0, 0, 0, 0.64);
+  -webkit-box-shadow: 2px 9px 17px -8px rgba(0, 0, 0, 0.64);
+  -moz-box-shadow: 2px 9px 17px -8px rgba(0, 0, 0, 0.64);
+}
+
 .hamburger {
-  display: hidden;
+  display: none;
 }
 
 .menu-btn {
@@ -182,6 +189,9 @@
 
 /* lg */
 @media (max-width: 1024px) {
+  /* .hamburger {
+    display: none;
+  } */
 }
 
 /* xl */

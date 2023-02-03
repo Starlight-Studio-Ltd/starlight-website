@@ -9,10 +9,11 @@ export const Review = () => {
   const [showCount, setShowCount] = useState(3);
 
   useEffect(() => {
-    if (size.width < 768) {
+    if (size.width > 574 && size.width < 768) {
       setShowCount(2);
+      return;
     }
-    if (size.width < 640) {
+    if (size.width < 574) {
       setShowCount(1);
     } else {
       setShowCount(3);

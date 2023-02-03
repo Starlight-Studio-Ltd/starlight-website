@@ -1,17 +1,17 @@
 import React from "react";
-import "./pages.css";
+import "../../styles/Footer.css";
 
 export const Footer = () => {
   return (
-    <section className=" Footer p-14 text-white">
+    <section className="Footer p-14 text-white">
       <div className="container_c-lg flex">
         <div className="contact flex flex-1 flex-col items-center justify-between text-center">
           <div className="">
             <h1 className="py-4 text-4xl">Let's Develop</h1>
             <p className="tracking-widest">Ask us anything or just say hi.</p>
           </div>
-          <div className="pb-6">
-            <p>phone: 09959165651</p>
+          <div className="pb-6 text-lg">
+            <p className="py-2">phone: 09959165651</p>
             <p>email: yemyo994@gmail.com</p>
           </div>
         </div>

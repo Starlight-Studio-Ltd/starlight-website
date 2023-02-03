@@ -16,7 +16,7 @@ export const HomePage = () => {
       <WhatWeOffer></WhatWeOffer>
       <Review></Review>
       <OurClients></OurClients>
-      {/* <Footer></Footer> */}
+      <Footer></Footer>
     </div>
   );
 };
