@@ -1,10 +1,43 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Search } from "react-feather";
 import "./NavBar.css";
 
 export const NavBar = () => {
+  const [showNav, setShowNav] = useState(true);
+  const [scrollPosition, setScrollPosition] = useState(0);
+
+  useEffect(() => {
+    const mainSectionEl = document.querySelector(
+      "#nav-appear-section"
+    ) as HTMLElement;
+    setScrollPosition(mainSectionEl?.offsetTop);
+
+    window.addEventListener("scroll", (e) => {
+      console.log(window.scrollY);
+      if (window.scrollY < scrollPosition) {
+        // hide nav bar ::; position none
+      } else if (scrollPosition > 380) {
+        // show nav bar ::: position sticky
+      }
+    });
+  }, [scrollPosition]);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setShowNav(true);
+    }, 500);
+  }, []);
+
   return (
-    <div className="NavBar">
+    <div
+      className="NavBar"
+      style={
+        {
+          // transform: showNav ? "translateY(0)" : "translateY(-100%)",
+          // transition: "transform 0.5s ease-in-out",
+        }
+      }
+    >
       <div className="expanded">
         <img
           src="../src/assets/starlight_color_logo.png"

@@ -88,3 +88,52 @@ body {
     #00d2ff
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
+
+/*  TO Add AppWise container */
+
+.container_c,
+.container_c-fluid,
+.container_c-sm,
+.container_c-md,
+.container_c-lg,
+.container_c-xl {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .container_c,
+  .container_c-sm {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container_c,
+  .container_c-sm,
+  .container_c-md {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container_c,
+  .container_c-sm,
+  .container_c-md,
+  .container_c-lg {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container_c,
+  .container_c-sm,
+  .container_c-md,
+  .container_c-lg,
+  .container_c-xl {
+    max-width: 1140px;
+  }
+}

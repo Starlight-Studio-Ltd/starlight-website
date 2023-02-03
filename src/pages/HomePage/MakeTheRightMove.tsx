@@ -1,6 +1,6 @@
 import { useLottie } from "lottie-react";
 import React from "react";
-import Businessmen from "../assets/businessmen.json";
+import Businessmen from "../../assets/businessmen.json";
 import "./pages.css";
 
 export const MakeTheRightMove = () => {

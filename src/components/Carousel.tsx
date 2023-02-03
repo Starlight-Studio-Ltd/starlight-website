@@ -13,8 +13,6 @@ export const Carousel = ({ children, show }: ICarousel) => {
   const [touchPosition, setTouchPosition] = useState(null);
 
   const handleTouchStart = (e: any) => {
-    console.log(typeof e);
-    console.log(e);
     const touchDown = e.touches[0].clientX;
     setTouchPosition(touchDown);
   };

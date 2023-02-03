@@ -1,21 +1,4 @@
-import React, { useRef } from "react";
-import { MakeTheRightMove } from "./MakeTheRightMove";
-import { Review } from "./Review";
-import { WhatWeOffer } from "./WhatWeOffer";
-
-export const HomePage = () => {
-  return (
-    <>
-      <MainSection></MainSection>
-      <WhatWeOffer></WhatWeOffer>
-      <MakeTheRightMove></MakeTheRightMove>
-      <WhatWeOffer></WhatWeOffer>
-      <Review></Review>
-    </>
-  );
-};
-
-const MainSection = () => {
+export const MainSection = () => {
   return (
     <section className="HomePage bg-baseBlue pb-20">
       <h2 className="py-4 text-center text-5xl font-bold text-white">
