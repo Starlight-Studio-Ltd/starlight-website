@@ -1,14 +1,11 @@
+import ShowCasePhoto from "../../assets/landing_showcase-original.png";
 export const MainSection = () => {
   return (
     <section className="HomePage bg-baseBlue pb-20">
       <h2 className="py-4 text-center text-5xl font-bold text-white">
         Build Apps for your Business
       </h2>
-      <img
-        src="../src/assets/landing_showcase-original.png"
-        alt=""
-        className=""
-      />
+      <img src={ShowCasePhoto} alt="" className="" />
 
       <div className="flex flex-col items-center justify-center">
         <p className="w-1/2 text-center text-xl text-white">

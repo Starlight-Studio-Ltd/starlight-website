@@ -3,7 +3,7 @@ import "./pages.css";
 
 export const Footer = () => {
   return (
-    <section className=" Footer py-20 text-white">
+    <section className=" Footer p-14 text-white">
       <div className="container_c-lg flex">
         <div className="contact flex flex-1 flex-col items-center justify-between text-center">
           <div className="">
@@ -25,12 +25,18 @@ export const Footer = () => {
 
             <label>Your Message</label>
             <textarea
-              style={{ resize: "none", color: "black" }}
+              className="textfield"
+              style={{ resize: "none" }}
               name="Your Message"
               placeholder="Your Message.."
             />
 
-            <button className="mt-2 w-full bg-baseBlue py-3 text-white">
+            <button
+              className="mt-2 w-full bg-baseBlue py-3 text-xl text-white"
+              onClick={(e) => {
+                e.preventDefault();
+              }}
+            >
               Submit
             </button>
           </form>

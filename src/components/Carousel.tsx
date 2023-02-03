@@ -65,7 +65,7 @@ export const Carousel = ({ children, show }: ICarousel) => {
               className="left-arrow shadow-custom cursor-not-allowed"
               disabled
             >
-              <MinusCircle />
+              <ArrowLeft />
             </button>
           ) : (
             <button onClick={prev} className="left-arrow shadow-custom">
@@ -73,7 +73,7 @@ export const Carousel = ({ children, show }: ICarousel) => {
             </button>
           )}
           <div
-            className="carousel-content-wrapper"
+            className="carousel-content-wrapper overflow-hidden"
             onTouchStart={handleTouchStart}
             onTouchMove={handleTouchMove}
           >
@@ -93,7 +93,7 @@ export const Carousel = ({ children, show }: ICarousel) => {
               onClick={next}
               className="right-arrow shadow-custom cursor-not-allowed"
             >
-              <MinusCircle />
+              <ArrowRight />
             </button>
           ) : (
             <button onClick={next} className="right-arrow shadow-custom">

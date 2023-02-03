@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Search } from "react-feather";
+import StarlightLogo from "../assets/starlight_color_logo.png";
 import "./NavBar.css";
 
 export const NavBar = () => {
@@ -39,11 +40,7 @@ export const NavBar = () => {
       }
     >
       <div className="expanded">
-        <img
-          src="../src/assets/starlight_color_logo.png"
-          alt=""
-          className="starlight_logo"
-        />
+        <img src={StarlightLogo} alt="" className="starlight_logo" />
       </div>
 
       <div className="hover_dropdown_container">

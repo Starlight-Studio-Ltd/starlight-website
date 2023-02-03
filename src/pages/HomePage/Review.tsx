@@ -1,4 +1,5 @@
 import React, { ReactNode } from "react";
+import { User } from "react-feather";
 import { Carousel } from "../../components/Carousel";
 
 export const Review = () => {
@@ -7,7 +8,7 @@ export const Review = () => {
       <h2 className="py-4 text-center text-4xl text-white">
         Check Out <br /> Recent Review
       </h2>
-      <div className="mx-auto mt-4 h-auto w-[55%]">
+      <div className="mx-auto mt-4 w-[60%] gap-x-4 ">
         <Carousel show={3}>
           <CarouselItem></CarouselItem>
           <CarouselItem></CarouselItem>
@@ -25,10 +26,12 @@ export const Review = () => {
 const CarouselItem = () => {
   return (
     <div className="">
-      <div style={{ padding: 10 }}>
+      <div style={{ margin: 10 }}>
         <div className="rounded-xl bg-white p-6">
           <div className="flex">
-            <div className="avatar mr-4 h-14 w-14 rounded-full bg-cyan-400"></div>
+            <div className="avatar mr-4 flex h-14 w-14 items-center justify-center rounded-full bg-cyan-400 text-white">
+              <User></User>
+            </div>
             <div className="flex flex-col">
               <h4 className="text-lg font-bold opacity-90">Ye Myo Aung</h4>
               <p className="font-semibold opacity-60">Developer</p>

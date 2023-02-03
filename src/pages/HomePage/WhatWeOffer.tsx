@@ -1,18 +1,13 @@
 import React, { useEffect, useRef } from "react";
+import GraduateIcon from "../../assets/business.png";
+import BusinessIcon from "../../assets/graduate.png";
+import PackageIcon from "../../assets/package.png";
 
 export const WhatWeOffer = () => {
-  const whatweofferRef = useRef<HTMLInputElement>(null);
-
-  const handleScroll = () => {
-    const position = whatweofferRef.current?.getBoundingClientRect();
-
-    console.log(position);
-  };
-
   useEffect(() => {}, []);
 
   return (
-    <section className=" py-6" id="nav-appear-section" ref={whatweofferRef}>
+    <section className="py-6" id="nav-appear-section">
       <h2 className="py-4 text-center text-4xl font-bold text-baseBlue">
         What we are offering
       </h2>
@@ -20,11 +15,7 @@ export const WhatWeOffer = () => {
       <div className="container_c flex items-start justify-center space-x-4 px-20 py-12 ">
         <div className="offer-item flex w-96 flex-col items-center justify-center">
           <div className="shadow-custom flex h-16 w-16 items-center justify-center rounded-full bg-green-800">
-            <img
-              src="../src/assets/graduate.png"
-              alt=""
-              className="h-12 w-12"
-            />
+            <img src={GraduateIcon} alt="" className="h-12 w-12" />
           </div>
           <h2 className="mt-6 mb-2 text-center text-lg font-bold opacity-70">
             Advance Education
@@ -36,11 +27,7 @@ export const WhatWeOffer = () => {
         </div>
         <div className="offer-item flex w-96 flex-col items-center justify-center">
           <div className="shadow-custom flex h-16 w-16 items-center justify-center rounded-full bg-purple-500 ">
-            <img
-              src="../src/assets/business.png"
-              alt=""
-              className="h-10 w-10"
-            />
+            <img src={BusinessIcon} alt="" className="h-10 w-10" />
           </div>
           <h2 className="mt-6 mb-2 text-center text-lg font-bold opacity-70">
             Business Solutions
@@ -53,7 +40,7 @@ export const WhatWeOffer = () => {
         </div>
         <div className="offer-item flex w-96 flex-col items-center justify-center">
           <div className="shadow-custom flex h-16 w-16 items-center justify-center rounded-full bg-blue-400 ">
-            <img src="../src/assets/package.png" alt="" className="h-10 w-10" />
+            <img src={PackageIcon} alt="" className="h-10 w-10" />
           </div>
           <h2 className="mt-6 mb-2 text-center text-lg font-bold opacity-70">
             Exclusive Packages
