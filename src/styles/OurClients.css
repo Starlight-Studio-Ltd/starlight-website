@@ -1,6 +1,6 @@
 .OurClients {
-  padding-top: 2.5rem /* 40px */;
-  padding-bottom: 2.5rem /* 40px */;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 .OurClients h2 {
@@ -91,6 +91,9 @@
 
 /* md */
 @media (max-width: 768px) {
+  .OurClients {
+    padding-top: 2rem;
+  }
   .hover_image_container {
     display: grid;
     grid-template-rows: repeat(2, 1fr);

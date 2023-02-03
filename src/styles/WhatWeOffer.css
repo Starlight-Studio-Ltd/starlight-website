@@ -69,21 +69,12 @@
 
 /* Media Query */
 
-/* sm */
-/* @media (max-width: 640px) {
-  .hover_dropdown_container {
-    display: none;
-  }
-} */
-
 /* md */
 @media (max-width: 768px) {
   .offer__container {
     padding-top: 1.5rem;
   }
-  .offer__item {
-    width: 15rem;
-  }
+
   .offer__container {
     flex-direction: column;
     justify-content: center;
@@ -106,4 +97,11 @@
 
 /* 2xl */
 @media (max-width: 1536px) {
+}
+
+/* sm */
+@media (max-width: 640px) {
+  .offer__item {
+    width: 16rem;
+  }
 }

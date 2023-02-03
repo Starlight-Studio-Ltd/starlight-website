@@ -3,20 +3,22 @@ import "../../styles/Footer.css";
 
 export const Footer = () => {
   return (
-    <section className="Footer p-14 text-white">
-      <div className="container_c-lg flex">
-        <div className="contact flex flex-1 flex-col items-center justify-between text-center">
+    <section className="Footer">
+      <div className="container_c-lg footer_container">
+        <div className="contact">
           <div className="">
-            <h1 className="py-4 text-4xl">Let's Develop</h1>
-            <p className="tracking-widest">Ask us anything or just say hi.</p>
+            <h1>Let's Develop</h1>
+            <p style={{ letterSpacing: 1, paddingBottom: 5 }}>
+              Ask us anything or just say hi.
+            </p>
           </div>
-          <div className="pb-6 text-lg">
-            <p className="py-2">phone: 09959165651</p>
+          <div className="phone_email">
+            <p>phone: 09959165651</p>
             <p>email: yemyo994@gmail.com</p>
           </div>
         </div>
-        <div className="form w-full flex-1 text-white">
-          <form action="">
+        <div className="footer_form">
+          <form>
             <label>First Name</label>
             <input type="text" name="Name" placeholder="Enter your name.." />
 
@@ -32,7 +34,7 @@ export const Footer = () => {
             />
 
             <button
-              className="mt-2 w-full bg-baseBlue py-3 text-xl text-white"
+              className=""
               onClick={(e) => {
                 e.preventDefault();
               }}

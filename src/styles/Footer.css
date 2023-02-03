@@ -1,9 +1,49 @@
+.Footer {
+  padding: 3.5rem;
+  color: #ffffff;
+}
+
+.footer_container {
+  display: flex;
+}
+
+.Footer .contact {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  flex: 1 1 0%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact h1 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+.phone_email {
+  padding-bottom: 1.5rem;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.phone_email p {
+  padding-bottom: 1rem;
+}
+
+.footer_form {
+  color: #ffffff;
+  flex: 1 1 0%;
+  width: 100%;
+}
+
 .Footer textarea {
   padding: 12px 20px;
 }
 .Footer label::after {
   content: "*";
-  padding: 20px;
+  padding: 0 10px;
   color: red;
 }
 
@@ -39,4 +79,46 @@ input[type="submit"]:hover {
   background: #000428;
   background: -webkit-linear-gradient(to right, #004e92, #000428);
   background: linear-gradient(to right, #004e92, #000428);
+}
+
+.Footer button {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  margin-top: 0.5rem;
+  color: #ffffff;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  width: 100%;
+  background-color: var(--baseBlue);
+}
+
+/* 2xl */
+@media (max-width: 1536px) {
+}
+/* xl */
+@media (max-width: 1280px) {
+}
+/* lg */
+@media (max-width: 1024px) {
+}
+/* md */
+@media (max-width: 768px) {
+  .footer_container {
+    flex-direction: column;
+  }
+
+  .phone_email p {
+    padding: 0 0;
+  }
+
+  .Footer button {
+    border: 1px solid rgb(255, 255, 255);
+  }
+}
+
+/* sm */
+@media (max-width: 640px) {
+  .Footer {
+    padding: 1.5rem;
+  }
 }
