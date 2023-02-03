@@ -1,4 +1,8 @@
 import React from "react";
+import LawKaNat from "../../assets/clients/lawkanet.jpg";
+import Marthin from "../../assets/clients/martin.jpg";
+import TawWinHtarHtar from "../../assets/clients/tawwin.jpg";
+import ThazinAndCherry from "../../assets/clients/thazin_cherry.jpg";
 import "./pages.css";
 
 export const OurClients = () => {
@@ -11,19 +15,13 @@ export const OurClients = () => {
 
         <div className="flex flex-col items-center justify-center space-x-10 lg:flex-row">
           <HoverImage
-            imageUrl="../../src/assets/clients/tawwin.jpg"
+            imageUrl={TawWinHtarHtar}
             text="Taw Win Htar Htar"
           ></HoverImage>
+          <HoverImage imageUrl={LawKaNat} text="Law Ka Net"></HoverImage>
+          <HoverImage imageUrl={Marthin} text="Mar Thin"></HoverImage>
           <HoverImage
-            imageUrl="../../src/assets/clients/lawkanet.jpg"
-            text="Law Ka Net"
-          ></HoverImage>
-          <HoverImage
-            imageUrl="../../src/assets/clients/martin.jpg"
-            text="Mar Thin"
-          ></HoverImage>
-          <HoverImage
-            imageUrl="../../src/assets/clients/thazin_cherry.jpg"
+            imageUrl={ThazinAndCherry}
             text="Thazin & Cherry"
           ></HoverImage>
         </div>
