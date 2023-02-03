@@ -1,7 +1,8 @@
 .NavBar {
   display: flex;
-  /* position: sticky;
-  top: 0; */
+  position: fixed;
+  width: 100vw;
+  top: 0;
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
   padding-left: 3rem;
@@ -11,6 +12,8 @@
   align-items: center;
   background-color: var(--baseBlue);
   z-index: 999;
+  height: 88px;
+  transition: top 0.3s; /* Transition effect when sliding down (and up) */
 }
 
 .NavBar button {

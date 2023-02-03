@@ -5,40 +5,37 @@ import "./NavBar.css";
 
 export const NavBar = () => {
   const [showNav, setShowNav] = useState(true);
-  const [scrollPosition, setScrollPosition] = useState(0);
 
   useEffect(() => {
     const mainSectionEl = document.querySelector(
-      "#nav-appear-section"
+      "#main-section"
     ) as HTMLElement;
-    setScrollPosition(mainSectionEl?.offsetTop);
+    const navbar = document.getElementById("navbar");
+
+    console.log("MainSection scrollHeight", mainSectionEl.scrollHeight);
 
     window.addEventListener("scroll", (e) => {
-      console.log(window.scrollY);
-      if (window.scrollY < scrollPosition) {
-        // hide nav bar ::; position none
-      } else if (scrollPosition > 380) {
-        // show nav bar ::: position sticky
+      // console.log("mainSectionEl.scrollHeight", mainSectionEl.scrollHeight);
+
+      if (window.scrollY === 0) {
+        setShowNav(true);
+      }
+
+      if (
+        window.scrollY < mainSectionEl.scrollHeight - 150 &&
+        window.scrollY !== 0
+      ) {
+        // console.log("hide", window.scrollY, mainSectionEl.scrollHeight);
+        setShowNav(false);
+      } else {
+        // console.log("show", window.scrollY, mainSectionEl.scrollHeight);
+        setShowNav(true);
       }
     });
-  }, [scrollPosition]);
-
-  useEffect(() => {
-    setTimeout(() => {
-      setShowNav(true);
-    }, 500);
-  }, []);
+  }, [showNav]);
 
   return (
-    <div
-      className="NavBar"
-      style={
-        {
-          // transform: showNav ? "translateY(0)" : "translateY(-100%)",
-          // transition: "transform 0.5s ease-in-out",
-        }
-      }
-    >
+    <div className="NavBar" id="navbar" style={{ top: showNav ? 0 : -88 }}>
       <div className="expanded">
         <img src={StarlightLogo} alt="" className="starlight_logo" />
       </div>

@@ -1,7 +1,11 @@
 import ShowCasePhoto from "../../assets/landing_showcase-original.png";
 export const MainSection = () => {
   return (
-    <section className="HomePage bg-baseBlue pb-20">
+    <section
+      className="HomePage bg-baseBlue pb-20"
+      style={{ padding: 100 }}
+      id="main-section"
+    >
       <h2 className="py-4 text-center text-5xl font-bold text-white">
         Build Apps for your Business
       </h2>
