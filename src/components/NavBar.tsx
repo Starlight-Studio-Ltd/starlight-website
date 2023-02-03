@@ -94,7 +94,7 @@ export const HoverDropDown = ({
       <p className="drop_down-label">{dropDownLabel}</p>
 
       {items.length > 0 && (
-        <div className="absolute-x-center hover_drop_down-child ">
+        <div className="hover_drop_down-child ">
           <div className="hover_child-container">
             {items.map((e, index) => {
               return (

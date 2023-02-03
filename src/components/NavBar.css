@@ -44,7 +44,7 @@
 
 .hover_dropdown_container {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
 }
 
 .hover_drop_down-item {
@@ -73,7 +73,7 @@
 }
 
 .drop_down-label:hover ~ .hover_drop_down-child {
-  display: flex;
+  display: block;
 }
 .hover_drop_down-child {
   display: none;
@@ -83,8 +83,8 @@
   width: max-content;
 
   position: absolute;
-  left: -50%;
-  --transform-translate-x: -50%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .hover_drop_down-child:hover {
   display: flex;
