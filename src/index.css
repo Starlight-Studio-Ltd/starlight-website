@@ -1,27 +1,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
-
 * {
   margin: 0;
 }
-
 html,
 body {
   height: 100%;
 }
-
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
-
 img,
 picture,
 video,
@@ -30,14 +25,12 @@ svg {
   display: block;
   max-width: 100%;
 }
-
 input,
 button,
 textarea,
 select {
   font: inherit;
 }
-
 p,
 h1,
 h2,
@@ -47,7 +40,6 @@ h5,
 h6 {
   overflow-wrap: break-word;
 }
-
 #root,
 #__next {
   isolation: isolate;
@@ -71,12 +63,28 @@ body {
   background-color: rgba(255, 255, 255, 0.181);
 }
 
-.absolute-x-center {
-  @apply absolute left-1/2 -translate-x-1/2  transform;
-}
-
 .shadow-custom {
   box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.Review-gradient {
+  background: #be93c5;
+  background: -webkit-linear-gradient(to right, #7bc6cc, #be93c5);
+  background: linear-gradient(to right, #7bc6cc, #be93c5);
+}
+
+.MakeTheRightMove-gradient {
+  background: #00d2ff; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #3a7bd5,
+    #00d2ff
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #3a7bd5,
+    #00d2ff
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }

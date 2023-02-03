@@ -1,4 +1,6 @@
 import React, { useRef } from "react";
+import { MakeTheRightMove } from "./MakeTheRightMove";
+import { Review } from "./Review";
 import { WhatWeOffer } from "./WhatWeOffer";
 
 export const HomePage = () => {
@@ -6,7 +8,9 @@ export const HomePage = () => {
     <>
       <MainSection></MainSection>
       <WhatWeOffer></WhatWeOffer>
-      <div className="min-h-screen"></div>
+      <MakeTheRightMove></MakeTheRightMove>
+      <WhatWeOffer></WhatWeOffer>
+      <Review></Review>
     </>
   );
 };
