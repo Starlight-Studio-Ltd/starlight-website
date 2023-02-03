@@ -15,7 +15,7 @@ export const Footer = () => {
             <p>email: yemyo994@gmail.com</p>
           </div>
         </div>
-        <div className="form w-full flex-1 text-black">
+        <div className="form w-full flex-1 text-white">
           <form action="">
             <label>First Name</label>
             <input type="text" name="Name" placeholder="Enter your name.." />
@@ -25,7 +25,7 @@ export const Footer = () => {
 
             <label>Your Message</label>
             <textarea
-              style={{ resize: "none" }}
+              style={{ resize: "none", color: "black" }}
               name="Your Message"
               placeholder="Your Message.."
             />

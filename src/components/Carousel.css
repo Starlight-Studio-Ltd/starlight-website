@@ -41,20 +41,27 @@
   position: absolute;
   z-index: 1;
   top: 50%;
+
   transform: translateY(-50%);
   width: 48px;
   height: 48px;
   border-radius: 24px;
-  background-color: white;
+  background-color: var(--lightGray);
   border: 1px solid #ddd;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .left-arrow {
-  left: 24px;
+  left: -12px;
+  backdrop-filter: blur(5px);
 }
 
 .right-arrow {
-  right: 24px;
+  right: -12px;
+  backdrop-filter: blur(5px);
 }
 
 /* @media (hover: none) and (pointer: coarse) {

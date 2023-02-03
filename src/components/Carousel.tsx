@@ -1,4 +1,5 @@
 import React, { ReactNode, useEffect, useState } from "react";
+import { ArrowLeft, ArrowRight, MinusCircle } from "react-feather";
 import "./Carousel.css";
 
 interface ICarousel {
@@ -8,7 +9,7 @@ interface ICarousel {
 }
 
 export const Carousel = ({ children, show }: ICarousel) => {
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const [currentIndex, setCurrentIndex] = useState(1);
   const [length, setLength] = useState(React.Children.count(children));
   const [touchPosition, setTouchPosition] = useState(null);
 
@@ -59,12 +60,16 @@ export const Carousel = ({ children, show }: ICarousel) => {
         <div className="carousel-wrapper">
           {/*  */}
           {currentIndex == 0 ? (
-            <button onClick={prev} className="left-arrow">
-              No More
+            <button
+              onClick={prev}
+              className="left-arrow shadow-custom cursor-not-allowed"
+              disabled
+            >
+              <MinusCircle />
             </button>
           ) : (
-            <button onClick={prev} className="left-arrow">
-              &lt;
+            <button onClick={prev} className="left-arrow shadow-custom">
+              <ArrowLeft />
             </button>
           )}
           <div
@@ -84,12 +89,15 @@ export const Carousel = ({ children, show }: ICarousel) => {
           {/*  */}
 
           {currentIndex == length - show ? (
-            <button onClick={next} className="right-arrow">
-              no More
+            <button
+              onClick={next}
+              className="right-arrow shadow-custom cursor-not-allowed"
+            >
+              <MinusCircle />
             </button>
           ) : (
-            <button onClick={next} className="right-arrow">
-              &gt;
+            <button onClick={next} className="right-arrow shadow-custom">
+              <ArrowRight />
             </button>
           )}
         </div>

@@ -11,8 +11,8 @@ export const MakeTheRightMove = () => {
   const { View } = useLottie(options);
 
   return (
-    <section className="MakeTheRightMove__gradient MakeTheRightMove">
-      <div className="mx-40 flex items-center justify-between pt-10 text-white">
+    <section className="MakeTheRightMove__gradient MakeTheRightMove py-4">
+      <div className="mx-40 flex items-center justify-between  text-white">
         <div className="flex w-2/3  flex-col">
           <h2 className="pb-2 text-4xl">Make The Right Move:</h2>
           <p className=" text-2xl">Business Move</p>
