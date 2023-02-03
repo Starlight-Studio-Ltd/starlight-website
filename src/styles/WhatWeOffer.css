@@ -66,3 +66,44 @@
   text-align: center;
   opacity: 0.8;
 }
+
+/* Media Query */
+
+/* sm */
+/* @media (max-width: 640px) {
+  .hover_dropdown_container {
+    display: none;
+  }
+} */
+
+/* md */
+@media (max-width: 768px) {
+  .offer__container {
+    padding-top: 1.5rem;
+  }
+  .offer__item {
+    width: 15rem;
+  }
+  .offer__container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .offer__container p {
+    font-size: 18px;
+  }
+}
+
+/* lg */
+@media (max-width: 1024px) {
+}
+
+/* xl */
+@media (max-width: 1280px) {
+}
+
+/* 2xl */
+@media (max-width: 1536px) {
+}

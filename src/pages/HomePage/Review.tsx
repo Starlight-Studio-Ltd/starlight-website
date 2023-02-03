@@ -1,15 +1,31 @@
-import React, { ReactNode } from "react";
+import React, { ReactNode, useEffect, useState } from "react";
 import { User } from "react-feather";
 import { Carousel } from "../../components/Carousel";
+import useWindowSize from "../../hooks/windowResize";
+import "../../styles/Review.css";
 
 export const Review = () => {
+  const size = useWindowSize();
+  const [showCount, setShowCount] = useState(3);
+
+  useEffect(() => {
+    if (size.width < 768) {
+      setShowCount(2);
+    }
+    if (size.width < 640) {
+      setShowCount(1);
+    } else {
+      setShowCount(3);
+    }
+  }, [size, showCount]);
+
   return (
-    <section className="Review__gradient Review pb-10 pt-5">
-      <h2 className="py-4 text-center text-4xl text-white">
+    <section className="Review__gradient Review">
+      <h2>
         Check Out <br /> Recent Review
       </h2>
-      <div className="mx-auto mt-4 w-[60%] gap-x-4 ">
-        <Carousel show={3}>
+      <div className="container_c container_carousel">
+        <Carousel show={showCount}>
           <CarouselItem></CarouselItem>
           <CarouselItem></CarouselItem>
           <CarouselItem></CarouselItem>

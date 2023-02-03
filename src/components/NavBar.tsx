@@ -5,6 +5,10 @@ import "./NavBar.css";
 
 export const NavBar = () => {
   const [showNav, setShowNav] = useState(true);
+  const [openMenu, setOpenMenu] = useState(false);
+  function toggleMenu() {
+    setOpenMenu(!openMenu);
+  }
 
   useEffect(() => {
     const mainSectionEl = document.querySelector(
@@ -52,12 +56,23 @@ export const NavBar = () => {
           items={["Community", "Event", "Culture"]}
         ></HoverDropDown>
 
-        <div className="search-icon ">
+        <div className="search-icon">
           <Search></Search>
         </div>
       </div>
 
       <button className="GetStarted">Get Started</button>
+
+      <div className="hamburger">
+        <button
+          className={`${openMenu && "open"}  menu-btn`}
+          onClick={toggleMenu}
+        >
+          <span className="hamburger-top"></span>
+          <span className="hamburger-middle"></span>
+          <span className="hamburger-bottom"></span>
+        </button>
+      </div>
     </div>
   );
 };

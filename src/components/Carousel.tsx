@@ -65,7 +65,7 @@ export const Carousel = ({ children, show }: ICarousel) => {
               className="left-arrow shadow-custom cursor-not-allowed"
               disabled
             >
-              <ArrowLeft />
+              <ArrowLeft style={{ opacity: 0.4 }} />
             </button>
           ) : (
             <button onClick={prev} className="left-arrow shadow-custom">
@@ -93,7 +93,7 @@ export const Carousel = ({ children, show }: ICarousel) => {
               onClick={next}
               className="right-arrow shadow-custom cursor-not-allowed"
             >
-              <ArrowRight />
+              <ArrowRight style={{ opacity: 0.4 }} />
             </button>
           ) : (
             <button onClick={next} className="right-arrow shadow-custom">

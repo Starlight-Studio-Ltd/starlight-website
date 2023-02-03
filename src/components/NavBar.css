@@ -16,7 +16,7 @@
   transition: top 0.3s; /* Transition effect when sliding down (and up) */
 }
 
-.NavBar button {
+.NavBar .GetStarted {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   padding-left: 2rem;
@@ -115,6 +115,44 @@
   background-color: rgba(229, 231, 235, 1);
 }
 
+.hamburger {
+  display: hidden;
+}
+
+.menu-btn {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 19px;
+  width: 1.5rem;
+}
+
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
+  width: 1.5rem;
+  height: 2px;
+  background-color: white;
+  transform: rotate(0);
+  transition: all 0.45s ease;
+}
+
+.open .hamburger-top {
+  transform: rotate(45deg) translateY(6px) translate(6px);
+}
+
+.open .hamburger-middle {
+  transition: all 0.25s;
+  transform: translateX(-0.5rem);
+  opacity: 0;
+}
+
+.open .hamburger-bottom {
+  transform: rotate(-45deg) translateY(-6px) translate(6px);
+}
+
 /* Utils Classes */
 .expanded {
   flex: 1 1 0%;
@@ -123,21 +161,33 @@
 /* Media Query */
 
 /* sm */
-@media (min-width: 640px) {
-}
+/* @media (max-width: 640px) {
+  .hover_dropdown_container {
+    display: none;
+  }
+} */
 
 /* md */
-@media (min-width: 768px) {
+@media (max-width: 768px) {
+  .hover_dropdown_container {
+    display: none;
+  }
+  .GetStarted {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+  }
 }
 
 /* lg */
-@media (min-width: 1024px) {
+@media (max-width: 1024px) {
 }
 
 /* xl */
-@media (min-width: 1280px) {
+@media (max-width: 1280px) {
 }
 
 /* 2xl */
-@media (min-width: 1536px) {
+@media (max-width: 1536px) {
 }
