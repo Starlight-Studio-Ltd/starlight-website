@@ -10,25 +10,17 @@ export const NavBar = () => {
     const mainSectionEl = document.querySelector(
       "#main-section"
     ) as HTMLElement;
-    const navbar = document.getElementById("navbar");
-
-    console.log("MainSection scrollHeight", mainSectionEl.scrollHeight);
 
     window.addEventListener("scroll", (e) => {
-      // console.log("mainSectionEl.scrollHeight", mainSectionEl.scrollHeight);
-
       if (window.scrollY === 0) {
         setShowNav(true);
       }
-
       if (
         window.scrollY < mainSectionEl.scrollHeight - 150 &&
         window.scrollY !== 0
       ) {
-        // console.log("hide", window.scrollY, mainSectionEl.scrollHeight);
         setShowNav(false);
       } else {
-        // console.log("show", window.scrollY, mainSectionEl.scrollHeight);
         setShowNav(true);
       }
     });
@@ -65,7 +57,7 @@ export const NavBar = () => {
         </div>
       </div>
 
-      <button className="GetStarted">Get Start</button>
+      <button className="GetStarted">Get Started</button>
     </div>
   );
 };
