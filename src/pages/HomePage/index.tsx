@@ -1,5 +1,3 @@
-import React, { useRef } from "react";
-
 import { Footer } from "./Footer";
 import { MainSection } from "./MainSection";
 import { MakeTheRightMove } from "./MakeTheRightMove";

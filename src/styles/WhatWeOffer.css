@@ -87,18 +87,6 @@
   }
 }
 
-/* lg */
-@media (max-width: 1024px) {
-}
-
-/* xl */
-@media (max-width: 1280px) {
-}
-
-/* 2xl */
-@media (max-width: 1536px) {
-}
-
 /* sm */
 @media (max-width: 640px) {
   .offer__item {

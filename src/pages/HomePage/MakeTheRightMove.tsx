@@ -1,5 +1,4 @@
 import { useLottie } from "lottie-react";
-import React from "react";
 import Businessmen from "../../assets/businessmen.json";
 import "../../styles/MakeTheRightMove.css";
 

@@ -64,7 +64,7 @@
   backdrop-filter: blur(5px);
 }
 
-/*  Not To Show Left and right arrow on mobile or touch screen */
+/*  Hide Left and right arrow on mobile or touch screen */
 /* @media (hover: none) and (pointer: coarse) {
   .left-arrow,
   .right-arrow {

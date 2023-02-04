@@ -1,4 +1,3 @@
-import React from "react";
 import LawKaNat from "../../assets/clients/lawkanet.jpg";
 import Marthin from "../../assets/clients/martin.jpg";
 import TawWinHtarHtar from "../../assets/clients/tawwin.jpg";

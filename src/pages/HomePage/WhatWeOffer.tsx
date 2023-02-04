@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import { useEffect } from "react";
 import GraduateIcon from "../../assets/business.png";
 import BusinessIcon from "../../assets/graduate.png";
 import PackageIcon from "../../assets/package.png";

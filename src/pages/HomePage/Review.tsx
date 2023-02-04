@@ -1,4 +1,4 @@
-import React, { ReactNode, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { User } from "react-feather";
 import { Carousel } from "../../components/Carousel";
 import useWindowSize from "../../hooks/windowResize";
