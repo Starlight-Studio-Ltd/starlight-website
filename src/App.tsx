@@ -1,26 +1,35 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import { CloudLightning } from "react-feather";
+import { LoadingIndicator } from "./components/LoadingIndicator";
 import { NavBar } from "./components/NavBar";
 import { HomePage } from "./pages/HomePage";
 
 function App() {
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    setLoading(true);
+
+    let timer1 = setTimeout(() => {
+      setLoading(false);
+    }, 1200);
+
+    return () => {
+      clearTimeout(timer1);
+    };
+  }, []);
   return (
     <div className="">
-      <NavBar></NavBar>
-      <HomePage></HomePage>
+      {loading ? (
+        <LoadingIndicator />
+      ) : (
+        <>
+          <NavBar></NavBar>
+          <HomePage></HomePage>
+        </>
+      )}
     </div>
   );
 }
 
 export default App;
-
-// If the cube is directly inside the container:
-// #container:hover > #cube { background-color: yellow; }
-
-// If cube is next to (after containers closing tag) the container:
-// #container:hover + #cube { background-color: yellow; }
-
-// If the cube is somewhere inside the container:
-// #container:hover #cube { background-color: yellow; }
-
-// If the cube is a sibling of the container:
-// #container:hover ~ #cube { background-color: yellow; }
