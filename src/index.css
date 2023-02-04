@@ -53,6 +53,7 @@ h6 {
 body {
   overflow-x: hidden;
   overflow-y: scroll;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .pill {

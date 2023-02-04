@@ -75,6 +75,7 @@
   background-color: var(--lightGray);
   transition: all 0.2s ease;
 }
+
 .hover_drop_down-child {
   display: none;
   padding-top: 0.7rem;
@@ -84,21 +85,26 @@
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  transition: all 2s ease;
+  transition: all 3s ease;
+  opacity: 0;
+  height: 0;
 }
 
 .drop_down-label:hover ~ .hover_drop_down-child {
-  transition: all 2s ease;
   display: block;
+  opacity: 1;
+  height: max-content;
+  transition: all 3s ease;
 }
+
 .hover_drop_down-child:hover {
   display: flex;
-  transition: all 2s ease;
+  opacity: 1;
+  height: max-content;
 }
 
 .hover_child-container {
   display: flex;
-
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
   background-color: #ffffff;
@@ -106,7 +112,7 @@
   flex-direction: column;
   border-radius: 12px;
   min-width: 200px;
-  transition: all 2s ease;
+  transition: all 3s ease;
 }
 .hover_child-container > div:hover {
   background-color: rgba(229, 231, 235, 1);
