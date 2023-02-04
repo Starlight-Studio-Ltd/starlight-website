@@ -21,7 +21,7 @@
 .image_container {
   position: relative;
   overflow: hidden;
-  max-width: 15rem;
+  max-width: 500px;
   margin-left: 1.5rem;
   margin-right: 1.5rem;
   flex: 1 1 0%;
@@ -30,9 +30,10 @@
 .image {
   display: block;
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
   overflow: hidden;
-  max-width: 15rem;
+  max-width: 500px;
   max-height: auto;
 }
 
@@ -94,11 +95,16 @@
   .OurClients {
     padding-top: 2rem;
   }
+
+  .image_container {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
   .hover_image_container {
     display: grid;
     grid-template-rows: repeat(2, 1fr);
     grid-template-columns: repeat(2, 1fr);
-    grid-row-gap: 3rem;
+    grid-row-gap: 2rem;
   }
 }
 
@@ -116,7 +122,7 @@
 
 /* sm */
 @media (max-width: 640px) {
-  .hover_image_container {
+  /* .hover_image_container {
     align-items: center;
     display: grid;
     grid-template-rows: repeat(4, 1fr);
@@ -128,5 +134,5 @@
     justify-content: center;
     align-items: center;
     max-width: none;
-  }
+  } */
 }

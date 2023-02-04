@@ -2,7 +2,7 @@ import React from "react";
 import LawKaNat from "../../assets/clients/lawkanet.jpg";
 import Marthin from "../../assets/clients/martin.jpg";
 import TawWinHtarHtar from "../../assets/clients/tawwin.jpg";
-import ThazinAndCherry from "../../assets/clients/thazin_cherry.jpg";
+import ThazinAndCherry from "../../assets/clients/thazin_cherryc.jpg";
 import "../../styles/OurClients.css";
 
 export const OurClients = () => {
