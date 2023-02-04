@@ -2,6 +2,7 @@
   padding-bottom: 2rem;
   background-color: var(--baseBlue);
   padding-top: 100px;
+  min-height: 100vh;
 }
 
 .MainSection__header {
@@ -16,7 +17,7 @@
 
 .MainSection__image {
   margin: 0 auto;
-  max-height: 600px;
+  max-height: 620px;
 }
 
 .MainBody__container {
