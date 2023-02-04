@@ -58,19 +58,19 @@ export const Review = () => {
 
 const CarouselItem = () => {
   return (
-    <div className="">
+    <div>
       <div style={{ margin: 10 }}>
-        <div className="rounded-xl bg-white p-6">
-          <div className="flex">
-            <div className="avatar mr-4 flex h-14 w-14 items-center justify-center rounded-full bg-cyan-400 text-white">
+        <div className="carousel_item_container">
+          <div className="carousel_item">
+            <div className="avatar">
               <User></User>
             </div>
-            <div className="flex flex-col">
-              <h4 className="text-lg font-bold opacity-90">Ye Myo Aung</h4>
-              <p className="font-semibold opacity-60">Developer</p>
+            <div className="user">
+              <h4>Ye Myo Aung</h4>
+              <p>Developer</p>
             </div>
           </div>
-          <div className="pt-2">
+          <div className="review_desc">
             Lorem ipsum dolor, sit amet consetur adipisicing elit. Eveniet,
             repudiandae. Provident reicies nulla dolobus comod Labum
             repudiandae.

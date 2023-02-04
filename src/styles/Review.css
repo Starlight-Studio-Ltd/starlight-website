@@ -26,6 +26,49 @@
   width: 100%;
 }
 
+.carousel_item_container {
+  padding: 1.5rem;
+  background-color: #ffffff;
+  border-radius: 0.75rem;
+}
+
+.carousel_item {
+  display: flex;
+}
+
+.carousel_item .avatar {
+  display: flex;
+  margin-right: 1rem;
+  color: #ffffff;
+  justify-content: center;
+  align-items: center;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 9999px;
+  background-color: #004e92cc;
+}
+
+.carousel_item .user {
+  display: flex;
+  flex-direction: column;
+}
+
+.user h4 {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 700;
+  opacity: 0.9;
+}
+
+.user p {
+  font-weight: 600;
+  opacity: 0.6;
+}
+
+.carousel_item .review_desc {
+  padding-top: 0.5rem;
+}
+
 /* Media Query */
 
 /* sm */
@@ -34,20 +77,4 @@
     padding-left: 2rem !important;
     padding-right: 2rem !important;
   }
-}
-
-/* md */
-@media (max-width: 768px) {
-}
-
-/* lg */
-@media (max-width: 1024px) {
-}
-
-/* xl */
-@media (max-width: 1280px) {
-}
-
-/* 2xl */
-@media (max-width: 1536px) {
 }

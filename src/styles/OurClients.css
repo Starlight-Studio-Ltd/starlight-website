@@ -42,12 +42,19 @@
   bottom: 100%;
   left: 0;
   right: 0;
-  background-color: var(--baseBlue);
 
   background: #000428;
-  background: -webkit-linear-gradient(to bottom, #004e92, #000428);
-  background: linear-gradient(to bottom, #004e92, #000428);
-
+  background: -webkit-linear-gradient(
+    to bottom,
+    rgba(0, 78, 146, 0.8),
+    rgba(0, 4, 40, 0.8)
+  );
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 78, 146, 0.8),
+    rgba(0, 4, 40, 0.8)
+  );
+  backdrop-filter: blur(10px);
   opacity: 0;
   overflow: hidden;
   width: 100%;
@@ -63,7 +70,7 @@
 
 .overlay_child_container {
   color: white;
-  font-size: 20px;
+  font-size: 1.25rem;
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -74,8 +81,9 @@
 
 .overlay_child_container button {
   background-color: var(--lightGray);
+  font-size: 1rem;
   transition: 0.2s ease;
-  padding-top: 0.25rem;
+  padding-top: 0.5rem;
   padding-bottom: 0.25rem;
   padding-left: 2rem;
   padding-right: 2rem;
@@ -88,32 +96,19 @@
   background-color: rgba(255, 255, 255, 0.7);
 }
 
-/* Media Query */
-/* 2xl */
-@media (max-width: 1536px) {
-}
-
-/* xl */
-@media (max-width: 1280px) {
-}
-
-/* lg */
 @media (max-width: 1024px) {
   .image_container {
     margin: 0 0;
   }
 }
 
-/* sm */
-@media (max-width: 640px) {
-}
-
-/* md */
 @media (max-width: 768px) {
   .OurClients {
     padding-top: 2rem;
   }
-
+  .OurClients h2 {
+    margin-bottom: 2rem;
+  }
   .image_container {
     margin-left: 1rem;
     margin-right: 1rem;

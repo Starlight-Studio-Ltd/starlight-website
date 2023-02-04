@@ -49,13 +49,6 @@
 
 /* Media Query */
 
-/* sm */
-/* @media (max-width: 640px) {
-  .hover_dropdown_container {
-    display: none;
-  }
-} */
-
 /* md */
 @media (max-width: 768px) {
   .MainBody__container p {
@@ -67,14 +60,10 @@
   }
 }
 
-/* lg */
-@media (max-width: 1024px) {
-}
-
-/* xl */
-@media (max-width: 1280px) {
-}
-
-/* 2xl */
-@media (max-width: 1536px) {
+/* sm */
+@media (max-width: 640px) {
+  .MainSection__header {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
 }

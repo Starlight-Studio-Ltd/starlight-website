@@ -5,8 +5,8 @@
   top: 0;
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
-  padding-left: 3rem;
-  padding-right: 3rem;
+  padding-left: 8rem;
+  padding-right: 8rem;
   color: #ffffff;
   justify-content: space-between;
   align-items: center;
@@ -78,7 +78,7 @@
 
 .hover_drop_down-child {
   display: none;
-  padding-top: 0.7rem;
+  padding-top: 0.5rem;
   background-color: transparent;
   flex-direction: column;
   width: max-content;
@@ -170,20 +170,33 @@
 
 /* Media Query */
 
+/* lg */
+@media (max-width: 1024px) {
+  .NavBar {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
 /* md */
 @media (max-width: 768px) {
   .hover_dropdown_container {
     display: none;
   }
+
   .GetStarted {
     display: none;
   }
   .hamburger {
     display: block;
   }
+  .NavBar {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
 }
 
-/* NAvBar Slide  */
+/* NavBar Slide  */
 
 .nav_backdrop {
   position: absolute;
@@ -206,7 +219,8 @@
   z-index: 9999999;
   top: 0;
   right: 0;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.658);
+  backdrop-filter: blur(5px);
   overflow-x: hidden;
   transition: all 3s ease;
 }

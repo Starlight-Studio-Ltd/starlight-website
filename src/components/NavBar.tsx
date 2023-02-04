@@ -32,9 +32,9 @@ export const NavBar = () => {
 
   return (
     <div className="NavBar" id="navbar" style={{ top: showNav ? 0 : -88 }}>
-      <div className="expanded" onClick={() => {}}>
+      <a className="expanded" href="#main-section">
         <img src={StarlightLogo} alt="" className="starlight_logo" />
-      </div>
+      </a>
 
       <div className="hover_dropdown_container">
         <HoverDropDown
@@ -122,51 +122,3 @@ export const HoverDropDown = ({
     </div>
   );
 };
-
-// {
-//   openMenu && (
-//     <div className="nav_backdrop" onClick={toggleMenu}>
-//       <div className="nav_overlay" style={{ width: openMenu ? "60%" : "0" }}>
-//         <div className="nav_overlay__content">
-//           {/*  */}
-//           <CollapsibleItem />
-//           <CollapsibleItem />
-//           <CollapsibleItem />
-//           {/*  */}
-//         </div>
-//       </div>
-//     </div>
-//   );
-// }
-
-// export const CollapsibleItem = () => {
-//   const [expand, setExpand] = useState(true);
-//   const contentRef = useRef<HTMLDivElement>(null);
-
-//   useEffect(() => {
-//     if (contentRef.current) {
-//       contentRef.current.style.maxHeight = expand
-//         ? `${contentRef.current.scrollHeight}px`
-//         : "0";
-//     }
-//   }, [expand]);
-//   return (
-//     <div className="collapsible_item_container" style={{ width: "100%" }}>
-//       <button
-//         className={`collapsible ${expand && "active"}`}
-//         onClick={(e) => {
-//           e.stopPropagation();
-//           setExpand(!expand); //toggle
-//         }}
-//       >
-//         Open Section 1
-//       </button>
-//       <div className="content" ref={contentRef}>
-//         <li>Mobile</li>
-//         <li>Web</li>
-//         <li>Desktop</li>
-//         <li>Embedded</li>
-//       </div>
-//     </div>
-//   );
-// };
