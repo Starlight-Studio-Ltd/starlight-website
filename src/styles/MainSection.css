@@ -1,8 +1,7 @@
 .MainSection {
-  padding-bottom: 2rem;
+  padding-bottom: 4rem;
   background-color: var(--baseBlue);
-  padding-top: 100px;
-  min-height: 100vh;
+  padding-top: 75px;
 }
 
 .MainSection__header {

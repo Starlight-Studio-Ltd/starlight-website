@@ -8,15 +8,28 @@ export const Review = () => {
   const size = useWindowSize();
   const [showCount, setShowCount] = useState(3);
 
+  function setWidth() {
+    if (showCount == 1) {
+      return `100%`;
+    } else if (showCount == 2) {
+      return `75%`;
+    } else if (showCount == 3) {
+      return `60%`;
+    }
+  }
+
   useEffect(() => {
-    if (size.width > 574 && size.width < 768) {
+    if (size.width > 640 && size.width < 1024) {
       setShowCount(2);
+      setWidth();
       return;
     }
-    if (size.width < 574) {
+    if (size.width < 640) {
       setShowCount(1);
+      setWidth();
     } else {
       setShowCount(3);
+      setWidth();
     }
   }, [size, showCount]);
 
@@ -25,7 +38,10 @@ export const Review = () => {
       <h2>
         Check Out <br /> Recent Review
       </h2>
-      <div className="container_c container_carousel">
+      <div
+        className="container_c-sm container_carousel"
+        style={{ width: setWidth() }}
+      >
         <Carousel show={showCount}>
           <CarouselItem></CarouselItem>
           <CarouselItem></CarouselItem>
