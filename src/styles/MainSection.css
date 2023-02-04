@@ -33,7 +33,7 @@
   width: 50%;
 }
 
-.MainBody__container button {
+.MainBody__container .main_getStarted {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   padding-left: 2rem;
@@ -62,7 +62,7 @@
     width: 100vw;
     padding: 20px;
   }
-  .MainBody__container button {
+  .MainBody__container .main_getStarted {
     margin-top: 0rem;
   }
 }

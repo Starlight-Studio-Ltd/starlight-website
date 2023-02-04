@@ -13,7 +13,9 @@ export const MainSection = () => {
           You can customize your features depending on your requirements. We are
           here for your service.
         </p>
-        <button>Get Started</button>
+        <a href="#contact" className="main_getStarted">
+          Get Started
+        </a>
       </div>
     </section>
   );
