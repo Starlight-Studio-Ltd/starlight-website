@@ -50,7 +50,7 @@
   letter-spacing: 1px;
   font-weight: bold;
   line-height: 200px;
-  animation: textColor 2s ease-in-out infinite;
+  animation: textColor 1.2s ease-in-out infinite;
 }
 @keyframes textColor {
   0% {
